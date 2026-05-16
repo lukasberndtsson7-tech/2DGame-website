@@ -1,280 +1,35 @@
-/* Global reset -----------------------------------------------------
-   - Remove default margins/padding and set box-sizing and base font.
-   - Using a consistent reset prevents unexpected spacing across browsers.
-   - Comments by Github Copilot, certain parts were made, suggesed or edited with copilot these parts have comment notifying you of copilots
-*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+section{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 body{
-    background-repeat: no-repeat;
-    background-size:cover ;
-    background-attachment: fixed;
-    background-image: url("../img/LividRacoonGamesTESTSplashcsreen2.png");
-
-
+    .header{
+        font-size: xx-small;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(20, 54, 83);
+        .header-nav{
+            display: flex;
+            flex-direction: column;
+            .nav-logo{
+                height: 4vh;
+                width: 8vh;
+                img{width: 100%; width: 100%; object-fit: contain;}
+            }
+            .nav-link{
+                align-self: center;
+                justify-content:center ;
+            }
+        }
+    }
 }
-/* Header ------------------------------------------------------------
-   - Background for the top site header.
-*/
-.header{
-    /* background-color: #1F2937; */
-    color: white;
-}
-
-/* Header navigation container ---------------------------------------
-   - Horizontal flex container that spaces nav items evenly.
-   - Padding-left offsets the nav from the left edge.
-*/
-.header .header-nav{
-    color: #F9FAF8;
-    display: flex; 
-    justify-content: space-around;
-    font-size: 20px;
-    align-items: center;
-    padding: 20px 0px;
-    padding-left: 7rem;
-}
-
-/* Individual nav link group -----------------------------------------
-   - Keeps link items in a horizontal row and centers their content.
-*/
-.header .header-nav .nav-link{
-    display: flex; 
-    justify-content: center;
-    flex-direction: row;
-    font-size: 15px;
-}
-.header .header-nav .nav-logo{
-    width: 2.5vw;
-    height: auto;
-}
-
-/* Nav list items ----------------------------------------------------
-   - Remove default list style and add horizontal spacing between items.
-*/
-.header .header-nav .nav-link li{
-    list-style: none;
-    padding: 0px 20px;
-    display: inline;
-}
-
-/* Section one (Hero) ------------------------------------------------
-   - Main hero section: horizontally centers its content and shares the
-     header background color.
-*/
-.section-one{
-    display: flex;
-    justify-content: center;
-   /*  background-color: #1F2937;
-    background-repeat: no-repeat;
-    background-size:cover ;
-    background-attachment: fixed;
-    background-image: url("../img/LividRacoonGamesTESTSplashcsreen2.png"); */
-
-}
-
-/* Hero content container --------------------------------------------
-   - Holds hero text and image side-by-side using flex.
-   - Large top padding pushes the hero down from the top of the section.
-*/
-.section-one .sec-one-cont{
-    display: flex;
-    flex: auto;
-    padding-top: 4rem;
-    padding-bottom: 0rem;
-    margin-left: 120px;
-    justify-content: center;
-}
-
-/* Hero title ---------------------------------------------------------
-   - Bold large title with a constrained max width for readable lines.
-*/
-.section-one .sec-one-cont .hero{
-    font-weight: 700;
-    font-size: 40px;
-    color: #F9FAF8;
-    max-width: 300px;
-}
-
-/* Hero subtitle -----------------------------------------------------
-   - Smaller subtext with controlled line-height for legibility.
-*/
-.section-one .sec-one-cont .hero-subtext{
-    font-size: 15px;
-    color: #e5e7eb;
-    align-self: center;
-    line-height: 20px;
-    max-width: 300px;
-}
-
-/* Hero call-to-action button ----------------------------------------
-   - Styled button anchored to the end of the hero container with
-     padding, rounded corners, and a distinct background color.
-*/
-.section-one .sec-one-cont button{
-    align-self: flex-end;
-    background-repeat: no-repeat;
-    background-size:cover ;
-    background-attachment: fixed;
-    background-image: url("img/LividRacoonGamesTESTSplashcsreen2.png");
-    padding: 0.4rem 1.7rem;
-    color: #e5e7eb;
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-/* Hero image container ----------------------------------------------
-   - Centered image area that shares space with the hero text.
-*/
-.section-one .sec-one-vid{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    flex: auto;
-}
-
-/* Section two -------------------------------------------------------
-   - Uses a vertical (column) flex layout so children stack: title above
-     the `.container` block.
-   - Subtle note: stacked layout was added/tuned with GitHub Copilot
-     to ensure the container sits directly below the heading.
-*/
-.section-two{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/* Section two top heading ------------------------------------------
-   - Prominent heading centered in the section; a top margin creates
-     spacing from elements above.
-*/
-.section-two .sec-two-top{
-    display: flex;
-    font-size: 36px;
-    height: 50px;
-    align-self: center;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    color: #e5e7eb;
-    font-weight: 900;
-}
-
-/* Primary container under the heading -------------------------------
-   - A centered horizontal container that holds the main content items.
-   - Fixed width/height control layout; items are spaced around.
-*/
-.container { 
-    align-self: center;
-    display: flex;
-    justify-content: space-around;
-    height: 10vw;
-    width: 40vw;
-}
-
-/* Individual item boxes inside the container ------------------------
-   - Each box has a fixed size, thick border and rounded corners.
-   - Top margin creates space between the heading and the boxes.
-*/
-.container .item{
-    margin-top: 60px;
-    height: 9vw;
-    width: 9vw;
-    border: #87b5ff solid 5px;
-    border-radius: 6px;
-}
-
-/* Secondary container ------------------------------------------------
-   - Another row of content placed beneath the primary `.container`.
-   - Slight top margin separates it from the block above.
-*/
-.container-two{
-    margin-top: 50px;
-    align-self: center;
-    display: flex;
-    justify-content: space-around;
-    height: 9vw;
-    width: 40vw;
-}
-
-/* Compact text block -------------------------------------------------
-   - Narrow column for small text blocks with bottom spacing.
-*/
-.container-two .text{
-    width: 8vw;
-    margin-bottom: 3vw;
-    color: #e5e7eb;
-}
-.section-three{
-    margin-top: 3vh;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    flex-direction: row;
-    height: 20vw;
-    justify-content: center;
-    align-items: center;
-}
-.quote{
-    flex-wrap: wrap;
-    width: 40vw;
-    font-size: 1.8vw;
-    color: #e5e7eb;
-    font-weight: 300;
-   
-}
-.section-last{
-    display: flex;
-flex-direction: column;
-/* background-color: white;
- */width: auto;
-height: 17.5vw;
-justify-content: center;
-align-items: center;
-}
-/* Call-to-action ---------------------------------------------------
-   - Centered vertical layout for CTA content with a `min-height` so the
-     content can expand while staying vertically centered.
-   - Small `gap` controls spacing between stacked children instead of
-     relying on margins.
-   - Note: these layout adjustments (min-height & gap) were suggested
-     and applied with help from GitHub Copilot.
-*/
-.call-to-action{
-    justify-content: flex-start; /* kept flex-start as per current layout preference */
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem; /* small gap between stacked children */
-    color: white;
-   /*  background-color: #3882F6; */
-    margin-top: 100px;
-    margin-bottom: 90px;
-    padding: 30px;
-    width: 30vw;
-    min-height: 100px; /* use min-height so content can expand and center properly */
-    border-radius: 10px;
-    font-weight: 600;
-    box-sizing: border-box;
-}
-.b2, button{
-    align-self: flex-end;
-/*     background-color: #3882F6;
- */    padding: 0.4rem 1.7rem;
-    color: #e5e7eb;
-    border-radius: 8px;
-   
-    border: #e5e7eb solid 2px;
-}
-/* Reset paragraph margins inside the call-to-action so vertical spacing
-   is controlled by flex `gap` and padding, ensuring proper centering. 
-   (rule added with GitHub Copilot)
-*/
-.call-to-action p{
-    margin: 0;
-}
-
