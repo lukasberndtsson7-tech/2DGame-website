@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.header{
+    background-color: #1F2937;
+   
+        .header-nav{
+            color: #F9FAF8;
+           display: flex; 
+           justify-content: space-around;
+           font-size: 20px;
+           align-items: center;
+           padding: 20px 0px;
+           padding-left: 7rem;
+        
+        .nav-link{
+            display: flex; 
+            justify-content: center;
+            flex-direction: row;
+            font-size: 15px;
+            li{
+                list-style: none;
+                padding: 0px 20px;
+                display: inline;
+            }
+
+        }
+     }
+}
+
+.section-one{
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+
+    .sec-one-cont{
+         display: flex;
+          flex: auto;
+          padding-top: 4rem;
+          padding-bottom: 0rem;
+          margin-left: 120px;
+          justify-content: center; 
+         .hero{font-weight: 700;
+         font-size: 40px;
+             color: #F9FAF8;
+            max-width: 300px;}
+         .hero-subtext{font-size: 15px;
+         color: #e5e7eb;
+         align-self: center;
+         line-height: 20px;
+         max-width: 300px;;
+    }
+            button{ align-self: flex-end;
+            background-color: #3882F6;
+            padding: 0.4rem 1.7rem;
+            color: #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            
+     }
+ }
+ .sec-one-img{ display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex: auto;
+     
+}
+}
+
+.section-two{
+    display: flex;
+    justify-content: center;
+    .sec-two-top{ display: flex;
+        border: solid black 5px;
+        font-size: 36px;
+        .container{ display: flex;
+            border: black solid 5px;
+            height: 500px;
+            width: 500px;
+            .item{ height: 180px;
+                width: 180px;
+                border: #3882F6 solid 3px;
+            }
+        }
+    }
+}
