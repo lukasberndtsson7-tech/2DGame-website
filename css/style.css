@@ -10,11 +10,19 @@
     font-family: "Roboto", sans-serif;
 }
 
+body{
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-image: url("../img/LividRacoonGamesTESTSplashcsreen2.png");
+
+}
 /* Header ------------------------------------------------------------
    - Background for the top site header.
 */
 .header{
-    background-color: #1F2937;
+    /* background-color: #1F2937; */
+    color: white;
 }
 
 /* Header navigation container ---------------------------------------
@@ -40,6 +48,10 @@
     flex-direction: row;
     font-size: 15px;
 }
+.header .header-nav .nav-logo{
+    width: 50px;
+    height: auto;
+}
 
 /* Nav list items ----------------------------------------------------
    - Remove default list style and add horizontal spacing between items.
@@ -57,7 +69,12 @@
 .section-one{
     display: flex;
     justify-content: center;
-    background-color: #1F2937;
+   /*  background-color: #1F2937;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-image: url("../img/LividRacoonGamesTESTSplashcsreen2.png"); */
+
 }
 
 /* Hero content container --------------------------------------------
@@ -100,7 +117,10 @@
 */
 .section-one .sec-one-cont button{
     align-self: flex-end;
-    background-color: #3882F6;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-image: url("img/LividRacoonGamesTESTSplashcsreen2.png");
     padding: 0.4rem 1.7rem;
     color: #e5e7eb;
     border-radius: 8px;
@@ -110,7 +130,7 @@
 /* Hero image container ----------------------------------------------
    - Centered image area that shares space with the hero text.
 */
-.section-one .sec-one-img{
+.section-one .sec-one-vid{
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -139,7 +159,7 @@
     height: 50px;
     align-self: center;
     margin-top: 60px;
-    color: #1f2937;
+    color: #e5e7eb;
     font-weight: 900;
 }
 
@@ -163,7 +183,7 @@
     margin-top: 60px;
     height: 180px;
     width: 180px;
-    border: #3882F6 solid 5px;
+    border: #87b5ff solid 5px;
     border-radius: 22px;
 }
 
@@ -186,11 +206,11 @@
 .text{
     width: 150px;
     margin-bottom: 60px;
-    
+    color: #e5e7eb;
 }
 .section-three{
     display: flex;
-    background-color: #e5e7eb;
+   /*  background-color: #e5e7eb; */
     width: auto;
     flex-direction: column;
     height: 400px;
@@ -200,15 +220,15 @@
 .quote{
     width: 800px;
     font-size: 36px;
-    color: #1f2937;
+    color: #e5e7eb;
     font-weight: 300;
    
 }
-.section-four{
+.section-last{
     display: flex;
 flex-direction: column;
-background-color: white;
-width: auto;
+/* background-color: white;
+ */width: auto;
 height: 350px;
 justify-content: center;
 align-items: center;
@@ -227,7 +247,7 @@ align-items: center;
     flex-direction: column;
     gap: 0.5rem; /* small gap between stacked children */
     color: white;
-    background-color: #3882F6;
+   /*  background-color: #3882F6; */
     margin-top: 100px;
     margin-bottom: 90px;
     padding: 30px;
@@ -239,8 +259,8 @@ align-items: center;
 }
 .b2, button{
     align-self: flex-end;
-    background-color: #3882F6;
-    padding: 0.4rem 1.7rem;
+/*     background-color: #3882F6;
+ */    padding: 0.4rem 1.7rem;
     color: #e5e7eb;
     border-radius: 8px;
    
